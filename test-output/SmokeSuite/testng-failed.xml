@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [SmokeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="unitTest(failed)">
+    <classes>
+      <class name="com.example.dataprovider">
+        <methods>
+          <include name="statup"/>
+          <include name="schedule" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- com.example.dataprovider -->
+    </classes>
+  </test> <!-- unitTest(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
